@@ -1,13 +1,13 @@
 # rosbag_compress
-A Python comand line tool for multiple ROS bag files compression and decompression
+A python command line tool for compression or decompression of multiple ROS bag files
 
-This tool search bag files recrusively,
+This tool searchs bag files recrusively,
 
 compress or compress them at same time.
 
 It is executed in parallel process, so the task is done fastly.
 
-This tool use the rosbag command line tool which is a default ROS tool.
+This tool uses the rosbag command line tool which is a default ROS tool.
 
 [rosbag/Commandline - ROS Wiki](http://wiki.ros.org/rosbag/Commandline#compress "rosbag/Commandline - ROS Wiki")
 
@@ -19,15 +19,15 @@ compress bag files under current dir.
 
 compress bag files under /home/Desktop/bag
 
-> $ rosrun common rosbag_compress -p /home/Desktop/bag
+> $ python rosbag_compress.py -p /home/Desktop/bag
 
 decompress bag files under /home/Desktop/bag
 
-> $ rosrun common rosbag_compress -d -p /home/Desktop/bag
+> $ python rosbag_compress.py -d -p /home/Desktop/bag
 
 remove original files (*.orig.bag) under /home/Desktop/bag
 
-> $ rosrun common rosbag_compress -r -p /home/Desktop/bag
+> $ python rosbag_compress.py -r -p /home/Desktop/bag
 
 # License
 
